@@ -1,12 +1,12 @@
 <script>
-  import Counter from "./lib/Counter.svelte";
+  import Layers from "./lib/Layers.svelte";
 </script>
 
 <main>
   <div class="content">
     <h1>Rsbuild with Svelte</h1>
     <p>Start building amazing things with Rsbuild.</p>
-    <Counter />
+    <Layers />
   </div>
 </main>
 

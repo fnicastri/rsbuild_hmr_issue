@@ -5,7 +5,6 @@ import { setupStores, type LayerStore } from "./store";
 setupStores();
 window.layerStore.add({
 	id: self.crypto.randomUUID(),
-
 	loaded: true,
 });
 

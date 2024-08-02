@@ -6,14 +6,12 @@ export default defineConfig({
 	source: {
 		entry: {
 			svelte: "./src/index.ts",
-			// bar: "./src/main.ts",
-			// magic: "./src/magic.ts",
 			plain: "./src/plain/index.js",
 		},
 	},
 	html: {
-		// template: "./index.html",
-		// inject: false,
+		template: "./public/index.html",
+		inject: false,
 	},
 	dev: {
 		// progressBar: true,
@@ -21,7 +19,7 @@ export default defineConfig({
 	},
 	tools: {
 		// rspack: {},
-		// htmlPlugin: false,
+		htmlPlugin: false,
 		// postcss: {
 		// 	postcssOptions: {},
 		// },
@@ -38,23 +36,14 @@ export default defineConfig({
 	},
 	output: {
 		manifest: true,
-		filename: {
-			js: "[name].bundle.js",
-			css: "[name].bundle.css",
-		},
+		// filename: {
+		// 	js: "[name].bundle.js",
+		// 	css: "[name].bundle.css",
+		// },
 	},
 	plugins: [
 		pluginSass(),
 		pluginSvelte({
-			// preprocessOptions: {
-			// 	scss: { verbose: true },
-			// 	postcss: {
-			// 		plugins: [],
-			// 	},
-			// 	sass: {
-			// 		verbose: true,
-			// 	},
-			// },
 			svelteLoaderOptions: {
 				compilerOptions: {
 					enableSourcemap: true,

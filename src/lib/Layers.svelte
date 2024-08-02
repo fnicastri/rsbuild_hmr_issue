@@ -23,7 +23,7 @@
     style="display: flex; flex-direction: column; align-items: start;margin: 1rem auto;"
   >
     {#each $layerStore as layer}
-      <div>===========&gt; {layer.id}</div>
+      <div>===========&gt; {layer.id} =≠==========</div>
     {/each}
   </div>
 </div>
